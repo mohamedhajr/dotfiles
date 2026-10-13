@@ -1,0 +1,24 @@
+# Ghostty on the Mac. Linux's Ghostty config belongs to Omarchy and is not here.
+#
+# The keyboard section makes this terminal hand herdr the same keys the Linux one
+# does, so herdr/config.toml can be one file for both machines.
+
+font-family = JetBrainsMono Nerd Font
+
+# Left Option is Alt, so herdr's alt+... bindings arrive. Right Option still
+# types special characters. Ghostty only does this by default on the U.S.
+# layouts, and this Mac uses ABC and Arabic.
+macos-option-as-alt = left
+
+# Ghostty's Mac defaults turn Option+Left/Right into Esc-b/Esc-f, which herdr
+# would read as alt+b/alt+f. Unbinding them sends the real Alt+arrow, which
+# herdr uses to change tab. Outside herdr, shell/common.sh maps them to word
+# movement.
+keybind = alt+arrow_left=unbind
+keybind = alt+arrow_right=unbind
+
+# The same two lines Omarchy puts in Linux's Ghostty: send Shift+Enter and
+# Alt+Shift+Enter as CSI-u so they are distinguishable from Enter and Alt+Enter
+# (Shift+Enter: newline in Claude Code; Alt+Shift+Enter: herdr's vertical split).
+keybind = shift+enter=csi:13;2u
+keybind = alt+shift+enter=csi:13;4u
