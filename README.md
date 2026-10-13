@@ -36,6 +36,6 @@ keymap.
 
 ## Not here, on purpose
 
-- `~/.zshrc`, `~/.bashrc`: machine-specific paths, and a secret on Linux. They source `shell/common.sh`.
+- `~/.zshrc`, `~/.bashrc`: machine-specific paths and private values. They source `shell/common.sh`.
 - Linux Ghostty: Omarchy owns `~/.config/ghostty/config`.
 - herdr itself: Homebrew on the Mac, Omarchy's package on Linux. The config passes `herdr config check` on both versions.
