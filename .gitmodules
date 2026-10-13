@@ -1,9 +1,0 @@
-[submodule ".vim/pack/plugins/start/vim-terraform"]
-	path = .vim/pack/plugins/start/vim-terraform
-	url = https://github.com/hashivim/vim-terraform.git
-[submodule ".vim/pack/plugins/start/rainbow"]
-	path = .vim/pack/plugins/start/rainbow
-	url = https://github.com/luochen1990/rainbow.git
-[submodule ".vim/pack/go/start/vim-go"]
-	path = .vim/pack/go/start/vim-go
-	url = https://github.com/fatih/vim-go.git
